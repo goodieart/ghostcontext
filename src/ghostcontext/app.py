@@ -35,7 +35,7 @@ async def lifespan(app: FastAPI) -> AsyncIterator[None]:
     app.state.chroma_client = chroma_client
 
     logger.info(
-        "GhostContext ready — upstream=%s collection=%s",
+        "GhostContext ready - upstream=%s collection=%s",
         settings.upstream_base_url,
         settings.collection_name,
     )

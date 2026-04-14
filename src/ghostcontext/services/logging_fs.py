@@ -15,7 +15,7 @@ def append_exchange_to_daily_log(
     path = log_dir / f"{day}.md"
     stamp = datetime.now(timezone.utc).isoformat()
     block = (
-        f"\n## Exchange — {stamp} (UTC)\n\n"
+        f"\n## Exchange - {stamp} (UTC)\n\n"
         f"### Запрос\n\n{user_text.strip()}\n\n"
         f"### Ответ\n\n{assistant_text.strip()}\n\n"
     )
